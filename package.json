@@ -1,0 +1,23 @@
+{
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "roxi dev",
+    "build": "roxi build",
+    "run-install": "roxi install",
+    "test": "roxi test"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@roxi/plugin-mdsvex": "^1.0.0",
+    "@roxi/plugin-postcss": "^1.0.0",
+    "roxi": "^1.1.0",
+    "axios": "^0.19.2",
+    "fetch-intercept": "^2.3.1",
+    "handsontable": "^7.4.2",
+    "numeral": "^2.0.6",
+    "pace-js": "^1.0.2"
+  }
+}

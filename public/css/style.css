@@ -1,0 +1,1731 @@
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: #000;
+    /* background: #091632; */
+    font-size: 0.9rem;
+}
+
+.sch-container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.sch-user-icons {
+    width: 14px;
+    height: 14px;
+    padding-right: 3px;
+}
+
+.bx--cloud-header {
+    background: #000;
+}
+
+.bx--cloud-header__wrapper {
+    padding: 0rem 8rem 0rem 2rem;
+}
+
+.bx--cloud-header-right {
+    margin-right: 7.5%;
+}
+
+.bx--cloud-header-list>a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.bx--cloud-header-list__item {
+    font-size: 14px;
+}
+
+.sch-Onboard-app {
+    font-size: 1rem !important;
+}
+
+
+/* mobile nav */
+
+.sch-mobile-nav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.sch-mobile-nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.mobile-active {
+    background-color: #18222F;
+    color: white;
+}
+
+.sch-mobile-nav .icon {
+    display: none;
+}
+
+.mobile-nav-dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.mobile-nav-dropdown .mobile-nav-dropbtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.mobile-nav-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.mobile-nav-dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.sch-mobile-nav a:hover,
+.mobile-nav-dropdown:hover .mobile-nav-dropbtn {
+    background-color: #555;
+    color: white;
+}
+
+.mobile-nav-dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.mobile-nav-dropdown:hover .mobile-nav-dropdown-content {
+    display: block;
+}
+
+
+/* dashboard main menu dropdown*/
+
+.dropdown .dropbtn {
+    width: 20%;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: inherit;
+    background-color: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000;
+    min-width: 160px;
+    z-index: 1;
+    margin-top: 20px;
+}
+
+.dropdown-content::before {
+    content: "";
+    position: absolute;
+    width: .5rem;
+    height: .5rem;
+    z-index: -1;
+    transform: rotate(45deg);
+    background: #000;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    top: -5px;
+    /* left: 24px; */
+}
+
+.dropdown-content::after {
+    position: absolute;
+    display: block;
+    background: #f9f9f9;
+    content: "";
+}
+
+.dropdown-content a {
+    float: none;
+    color: #dbdbdb;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #2e434e;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media(min-width: 320px) {
+    .sch-container {
+        max-width: 300px;
+    }
+}
+
+@media (min-width: 576px) {
+    .sch-container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .sch-container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .sch-container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .sch-container {
+        min-width: 1140px;
+    }
+}
+
+
+/* */
+
+.sch-txt-bold {
+    font-weight: normal;
+    line-height: 1.1rem;
+    color: black;
+}
+
+.sch-row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+
+/* spacing  schoolmo margin on x axis*/
+
+.sch-col-lg-3,
+.sch-col-lg-4,
+.sch-col.lg-5 {
+    position: relative;
+    width: 100%;
+    margin-right: 0.75rem;
+    margin-left: 0.75rem;
+}
+
+
+/* sch align self end  */
+
+.sch-align-s-e {
+    -ms-flex-item-align: end !important;
+    align-self: flex-end !important;
+}
+
+.sch-align-s-e svg {
+    margin: 0rem 0rem 0rem 3.3rem;
+}
+
+.sch-m-x {
+    margin-left: 0.35rem !important;
+    margin-right: 0.9375rem !important;
+    /* 0.9375rem */
+}
+
+.sch-m-y-2 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.sch-m-y-0 {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+.sch-m-x-0 {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+.sch-m-l-1 {
+    margin-left: 0.5rem;
+}
+
+.sch-p-l label {
+    padding-left: 0.4rem !important;
+}
+
+.sch-schools-name {
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+
+/* spans  */
+
+.percentage-per-week {
+    color: #14C7E4;
+}
+
+.sch-side-nav-bg {
+    background: #000;
+    height: 52.8125rem;
+}
+
+.sch-nav {
+    background: #000 !important;
+    height: 3.4rem;
+}
+
+
+/* side nav tetst */
+
+.sch-side-nav ul {
+    list-style: none;
+}
+
+.sch-side-dropdwn-items ul li a {
+    text-decoration: none;
+}
+
+.sch-side-dropdwn-items {
+    padding: 0.5rem 0rem !important;
+}
+
+.sch-side-dropdwn-items li {
+    margin-left: 1rem !important;
+}
+
+.sch-drop-color a {
+    color: #adb1b9 !important;
+}
+
+.sch-drop-color a:active {
+    color: #fff !important;
+}
+
+.sch-side-dropdwn-items a {
+    font-weight: normal;
+    letter-spacing: 0.1px;
+}
+
+nav ul li ul li a {
+    padding: 10px 20px;
+    font-weight: normal;
+    font-size: 0.9rem;
+    line-height: 1.1rem;
+    letter-spacing: 0.1px;
+}
+
+nav ul li ul li a:hover {
+    color: #fff;
+    text-align: left;
+}
+
+.dark-bg-color {
+    background: #091632 !important;
+}
+
+
+/* login error form  */
+
+.bx--inline-notification--success .bx--inline-notification__icon,
+.bx--inline-notification--success .bx--toast-notification__icon {
+    fill: #ffffff;
+}
+
+.bx--modal-content p,
+.success-row {
+    padding-bottom: 0.8rem !important;
+}
+
+
+/* end */
+
+.login-form-wrapper {
+    border: 2px solid #b7b7b7;
+    background: #FFFFFF;
+}
+
+.login-form-wrapper-p {
+    padding: 0.5rem 1.2rem 2.5rem 2.5rem;
+    font-size: 1.5rem;
+}
+
+.wrapper {
+    padding: 2rem 0rem 3%;
+}
+
+.line {
+    margin-bottom: 1.5rem;
+    border: 0.5px solid #8D8D8D;
+    width: 84%;
+    padding: 0rem 2.5rem;
+}
+
+
+/* dashboard home  */
+
+.section-wrapper {
+    background-color: #DBDBDB ;
+    width: 100%;
+    height: 100%;
+}
+
+.btn-primary,
+.bx--btn--primary {
+    background-color: #0f62fe;
+    color: #fff;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.bx--btn--tertiary {
+    border: 1px solid #0f62fe;
+    font-weight: normal;
+}
+
+.d-m-top-1 {
+    margin-top: 1.5rem;
+}
+
+.sch-m-t a,
+.sch-m-y a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.8rem 2.5rem;
+}
+
+.bx--side-nav__navigation li {
+    font-size: initial;
+    color: #fff;
+    text-align: left;
+    margin-left: 2rem;
+    /* margin-right: 1rem; */
+}
+
+.bx--side-nav__navigation li a {
+    padding-left: 1.2rem;
+}
+
+.bx--side-nav__navigation li a span,
+.sch-dropbtn-align span {
+    padding-left: 1.2rem;
+}
+
+.bx--data-table td:first-of-type {
+    padding-left: 0.6rem !important;
+}
+
+
+/* active nav link */
+
+.active {
+    font-size: initial;
+    color: #525252;
+    font-weight: 600;
+    background: #EDF5FF;
+    width: 12.0625rem;
+    height: 3rem;
+    /* border-left: 0.25rem solid #0F62FE; */
+    box-shadow: -5px 0px 0px 0px #0f62fe;
+    text-align: center;
+    transition: opacity .2s linear;
+    ;
+}
+
+.active span {
+    background: #EDF5FF;
+    color: #525252;
+    font-weight: 600;
+}
+
+.active path,
+.active circle,
+.active polyline,
+.active line,
+.active rect {
+    color: #525252;
+}
+
+.side-nav-a,
+.sch-dropbtn-align,
+.sch-top-btn {
+    display: inline-flex;
+    align-items: center;
+}
+
+.side-nav-svg {
+    padding: 0.8rem 0rem;
+}
+
+.bx--side-nav__navigation a:active {
+    color: #525252;
+    ;
+}
+
+.logout-svg {
+    margin-left: 0.3rem;
+}
+
+.sch-p-x {
+    padding: 0rem 1rem;
+}
+
+.sch-m-y {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.sch-m-t {
+    margin-top: 2rem;
+}
+
+.sch-dropbtn {
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.sch-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.sch-dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    overflow: auto;
+    z-index: 1;
+}
+
+.sch-dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.sch-dropdown a:hover {
+    background-color: #ddd;
+}
+
+.sch-show {
+    display: block;
+}
+
+.sch-dash-form {
+    height: 37.5rem;
+    background-color: #fff;
+    border: 2px solid #000;
+}
+
+.sch-dash-form-1 {
+    height: 37.5rem;
+    /* background-color: #fff; */
+    border: 2px solid #000;
+}
+
+.sch-basic-info {
+    font-size: 1.1rem;
+    font-weight: normal
+}
+
+.sch-dash-search {
+    border-bottom: hidden;
+    border: 0.0312rem solid #525252;
+}
+
+.bx--checkbox-wrapper {
+    padding: 0.5rem 2rem 0.3rem 2rem !important;
+    border-bottom: 0.0312rem solid #525252;
+    /* font-size: 0.9rem; */
+}
+
+.sch-school-list {
+    margin: 1rem 0rem;
+}
+
+.bx--checkbox-wrapper label {
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.sch-table-list {
+    border-top: 1px solid #b7b7b7;
+}
+
+legend {
+    /* padding: 0rem 1.6rem; */
+    color: #525252 !important;
+    font-size: 0.8rem !important;
+    margin-bottom: 0rem !important;
+}
+
+.sch-cancel-btn {
+    background-color: #393939;
+    color: #fff;
+    font-weight: normal !important;
+}
+
+.sch-cancel-btn:hover {
+    background-color: #4d4d4d;
+    font-weight: normal !important;
+}
+
+.sch-delete--btn {
+    background-color: #da1e28;
+    color: #fff;
+    font-weight: normal !important;
+}
+
+.sch-delete--btn:hover {
+    background-color: #b3131c;
+    font-weight: normal !important;
+}
+
+.sch-btn-row {
+    margin-bottom: 4.25rem;
+    margin-top: 2.7rem;
+}
+
+.sch--success-btn-row {
+    margin-bottom: 3.3rem;
+    margin-top: 2.3rem;
+}
+
+
+/* tabs  */
+
+.bx--tabs__nav--hidden {
+    background: #f4f4f4;
+    margin-right: 0rem;
+    border-bottom: 1px solid #dadada;
+}
+
+.bx--tabs__nav-item {
+    background: transparent;
+    padding: 1.5rem 0 0rem;
+    width: auto;
+    outline: none !important;
+}
+
+.bx--tabs__nav-item:first-child {
+    padding-left: 2.5rem;
+}
+
+.bx--tabs__nav-item--selected {
+    outline: none !important;
+}
+
+a.bx--tabs__nav-link {
+    border-bottom: 0px solid #e0e0e0;
+    padding: 0px !important;
+    width: auto !important;
+    margin: 0;
+    line-height: inherit;
+    outline: none !important;
+}
+
+.bx--tabs__nav-link:focus {
+    background-color: transparent;
+    color: #152935;
+    outline: none !important;
+    box-shadow: 0 0 0 0px transparent !important;
+}
+
+.bx--tabs__nav-item:focus,
+.bx--tabs__nav-item--selected:focus,
+.bx--tabs__nav-link:focus {
+    outline: none;
+}
+
+a.bx--tabs__nav-link:focus,
+a.bx--tabs__nav-link:active {
+    width: 100%;
+    margin: 0;
+    padding-left: auto;
+    outline: none !important;
+}
+
+.sch-input-btn {
+    width: 267.8px !important;
+}
+
+
+/* users  */
+
+.bx--action-list .bx--btn .bx--btn__icon {
+    fill: #fff;
+    margin-left: 1.5rem;
+}
+
+.bx--data-table th.bx--table-column-checkbox {
+    position: static;
+    background: #e0e0e0;
+    padding: .75rem .5rem 0 0.5rem !important;
+}
+
+.sch-datatable-icon {
+    margin-left: 2rem !important;
+}
+
+.bx--toolbar-content,
+.bx--data-table-header {
+    background-color: #e0e0e0;
+}
+
+@media(min-width: 320px) {
+    .sch-col-sm-1 {
+        -ms-flex: 0 0 8.333333%;
+        flex: 0 0 8.333333%;
+        max-width: 8.333333%;
+    }
+    .sch-col-sm-2 {
+        -ms-flex: 0 0 16.666667%;
+        flex: 0 0 16.666667%;
+        max-width: 16.666667%;
+    }
+    .sch-col-sm-3 {
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .sch-col-sm-4 {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+    .sch-col-sm-5 {
+        -ms-flex: 0 0 41.666667%;
+        flex: 0 0 41.666667%;
+        max-width: 41.666667%;
+    }
+    .sch-col-sm-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .sch-col-sm-7 {
+        -ms-flex: 0 0 58.333333%;
+        flex: 0 0 58.333333%;
+        max-width: 58.333333%;
+    }
+    .sch-col-sm-8 {
+        -ms-flex: 0 0 66.666667%;
+        flex: 0 0 66.666667%;
+        max-width: 66.666667%;
+    }
+    .sch-col-sm-9 {
+        -ms-flex: 0 0 75%;
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    .sch-col-sm-10 {
+        -ms-flex: 0 0 83.333333%;
+        flex: 0 0 83.333333%;
+        max-width: 83.333333%;
+    }
+    .sch-col-sm-11 {
+        -ms-flex: 0 0 91.666667%;
+        flex: 0 0 91.666667%;
+        max-width: 91.666667%;
+        height: auto;
+        margin: 0 auto;
+    }
+    .sch-col-sm-12 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .login-form {
+        width: 90%;
+        /* padding-top: 30px; */
+        height: auto;
+        position: fixed;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .schoolmo-logo p {
+        font-weight: 500;
+        font-size: 23px !important;
+        color: #fff;
+        margin: auto 0rem 0.55rem auto;
+        text-align: center;
+        letter-spacing: 0.23508px;
+    }
+    .schoolmo-logo span {
+        color: #0F62FE;
+    }
+    p {
+        font-size: 0.7rem;
+    }
+    .form-padding {
+        padding: 0rem 0rem 1.5rem 0.8rem;
+    }
+    .login-form_error {
+        width: 90%;
+        height: auto;
+        position: fixed;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .bx--form-alert {
+        margin-bottom: 1rem;
+        margin-top: 0.3125rem;
+        width: 100%;
+        padding: 0rem .8rem;
+    }
+    .bx--inline-notification-warning {
+        background-color: #F2994A;
+        font-weight: 400;
+        line-height: .6rem;
+        letter-spacing: 0.13px;
+        /* visibility: hidden; */
+    }
+    .bx--inline-notification--success {
+        background-color: #42BE65;
+        font-weight: 600;
+        line-height: .6rem;
+        letter-spacing: 0.13px;
+    }
+    .sch-side-nav-bg,
+    .sch-nav,
+    .sch-lg-users {
+        display: none;
+    }
+    .sch-sm-p-y {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .sch-dashboard-name {
+        padding-left: 0.4rem;
+        font-size: 1.2rem;
+    }
+    .sch-card--spc {
+        margin: 0rem;
+    }
+    .sch-dash-login-form-wrapper {
+        /* background: #fff; */
+        padding: 0rem .8rem;
+    }
+    .d-m-top {
+        margin-top: 1rem;
+    }
+    .sch-dash-form-item {
+        margin-left: 0rem;
+    }
+    .sch-dash-form-row,
+    .sch-dash-sm-form-row {
+        margin-top: 1.45rem;
+    }
+    .sch-school-address {
+        padding-top: 0rem;
+    }
+    .sch-card-row {
+        justify-content: left;
+    }
+    .sch-m-x {
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+    .bx--form-item {
+        margin-bottom: 1rem;
+        width: 100%;
+        padding: 0rem .8rem;
+    }
+    .menu-list-element {
+        padding: 1.5rem 0rem;
+        margin: 0rem;
+    }
+    .sch-delete-btn {
+        margin-left: 1rem;
+        padding-left: 3px;
+    }
+    .bx--tabs__nav-item:first-child,
+    .sch-tabs-space {
+        padding-left: 1rem;
+    }
+    .sch-sm-pl {
+        padding-left: 20px;
+    }
+    .sch-pl-1 {
+        padding-left: 5px;
+    }
+    .sch-mobile-nav a:not(:first-child),
+    .mobile-nav-dropdown .mobile-nav-dropbtn {
+        display: none;
+    }
+    .sch-mobile-nav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media (min-width: 576px) {
+    .sch-col-sm-1 {
+        -ms-flex: 0 0 8.333333%;
+        flex: 0 0 8.333333%;
+        max-width: 8.333333%;
+    }
+    .sch-col-sm-2 {
+        -ms-flex: 0 0 16.666667%;
+        flex: 0 0 16.666667%;
+        max-width: 16.666667%;
+    }
+    .sch-col-sm-3 {
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .sch-col-sm-4 {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+    .sch-col-sm-5 {
+        -ms-flex: 0 0 41.666667%;
+        flex: 0 0 41.666667%;
+        max-width: 41.666667%;
+    }
+    .sch-col-sm-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .sch-col-sm-7 {
+        -ms-flex: 0 0 58.333333%;
+        flex: 0 0 58.333333%;
+        max-width: 58.333333%;
+    }
+    .sch-col-sm-8 {
+        -ms-flex: 0 0 66.666667%;
+        flex: 0 0 66.666667%;
+        max-width: 66.666667%;
+    }
+    .sch-col-sm-9 {
+        -ms-flex: 0 0 75%;
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    .sch-col-sm-10 {
+        -ms-flex: 0 0 83.333333%;
+        flex: 0 0 83.333333%;
+        max-width: 83.333333%;
+    }
+    .sch-col-sm-11 {
+        -ms-flex: 0 0 91.666667%;
+        flex: 0 0 91.666667%;
+        max-width: 91.666667%;
+        height: auto;
+        margin: 0 auto;
+    }
+    .sch-col-sm-12 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .login-form {
+        width: 90%;
+        /* padding-top: 30px; */
+        height: auto;
+        position: fixed;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .schoolmo-logo p {
+        font-weight: 500;
+        font-size: 23px !important;
+        color: #fff;
+        margin: auto 0rem 0.55rem auto;
+        text-align: center;
+        letter-spacing: 0.23508px;
+    }
+    .schoolmo-logo span {
+        color: #0F62FE;
+    }
+    p {
+        font-size: 0.9rem;
+    }
+    .form-padding {
+        padding: 0rem 0rem 1.5rem .8rem;
+    }
+    /* login error  */
+    /* login error */
+    .login-form_error {
+        width: 90%;
+        height: auto;
+        position: fixed;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .bx--form-alert {
+        margin-bottom: 1rem;
+        margin-top: 0.3125rem;
+        width: 100%;
+        padding: 0rem .8rem;
+    }
+    .bx--inline-notification-warning {
+        background-color: #F2994A;
+        font-weight: 400;
+        line-height: .6rem;
+        letter-spacing: 0.13px;
+        /* visibility: hidden; */
+    }
+    .bx--inline-notification--success {
+        background-color: #42BE65;
+        font-weight: 600;
+        line-height: .6rem;
+        letter-spacing: 0.13px;
+    }
+    .form-padding {
+        padding: 0rem 0rem 0rem 0rem;
+    }
+    .sch-side-nav-bg,
+    .sch-nav,
+    .sch-lg-users {
+        display: none;
+    }
+    .sch-sm-p-y {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .sch-dashboard-name {
+        padding-left: 0rem;
+        font-size: 1.2rem;
+    }
+    .sch-card--spc {
+        margin-left: 0rem;
+    }
+    .sch-dash-login-form-wrapper {
+        /* background: #fff; */
+        padding: 0rem .8rem;
+    }
+    .d-m-top {
+        margin-top: 1rem;
+    }
+    .sch-dash-form-item {
+        margin-left: 0rem;
+    }
+    .sch-dash-form-row,
+    .sch-dash-sm-form-row {
+        margin-top: 1.45rem;
+    }
+    .sch-school-address {
+        padding-top: 0rem;
+    }
+    .sch-card-row {
+        justify-content: left;
+    }
+    .sch-m-x {
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+    .bx--form-item {
+        margin-bottom: 1.5rem;
+        width: 100%;
+        padding: 0rem .8rem;
+    }
+    .bx--form-item {
+        margin-bottom: 1rem;
+        width: 100%;
+        padding: 0rem .8rem;
+    }
+    .menu-list-element {
+        padding: 1.5rem 0rem;
+        margin: 0rem;
+    }
+    .sch-delete-btn {
+        margin-left: 1rem;
+        padding-left: 3px;
+    }
+    .bx--tabs__nav-item:first-child,
+    .sch-tabs-space {
+        padding-left: 1rem;
+    }
+    .sch-sm-pl {
+        padding-left: 20px;
+    }
+    .sch-pl-1 {
+        padding-left: 5px;
+    }
+}
+
+@media (min-width: 768px) {
+    .sch-col-md-1 {
+        -ms-flex: 0 0 8.333333%;
+        flex: 0 0 8.333333%;
+        max-width: 8.333333%;
+    }
+    .sch-col-md-2 {
+        -ms-flex: 0 0 16.666667%;
+        flex: 0 0 16.666667%;
+        max-width: 16.666667%;
+    }
+    .sch-col-md-3 {
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .sch-col-md-4 {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+    .sch-col-md-5 {
+        -ms-flex: 0 0 41.666667%;
+        flex: 0 0 41.666667%;
+        max-width: 41.666667%;
+    }
+    .sch-col-md-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .sch-col-md-7 {
+        -ms-flex: 0 0 58.333333%;
+        flex: 0 0 58.333333%;
+        max-width: 58.333333%;
+    }
+    .sch-col-md-8 {
+        -ms-flex: 0 0 66.666667%;
+        flex: 0 0 66.666667%;
+        max-width: 66.666667%;
+    }
+    .sch-col-md-9 {
+        -ms-flex: 0 0 75%;
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    .sch-col-md-10 {
+        -ms-flex: 0 0 83.333333%;
+        flex: 0 0 83.333333%;
+        max-width: 83.333333%;
+    }
+    .sch-col-md-11 {
+        -ms-flex: 0 0 91.666667%;
+        flex: 0 0 91.666667%;
+        max-width: 91.666667%;
+    }
+    .sch-col-md-12 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .schoolmo-logo p {
+        font-weight: 500;
+        font-size: 48px !important;
+        color: #fff;
+        margin: auto 0rem 0.55rem auto;
+        text-align: center;
+        letter-spacing: 0.23508px;
+    }
+    .schoolmo-logo span {
+        color: #0F62FE;
+    }
+    p {
+        font-size: 0.9rem;
+    }
+    .sch-md-m-x-0 {
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+    /* login error  */
+    .login-form_error {
+        width: 80%;
+        height: auto;
+        position: fixed;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .sch-sm-pl {
+        padding-left: 20px;
+    }
+    .sch-pl-1 {
+        padding-left: 5px;
+    }
+    .bx--form-alert {
+        margin-bottom: 1rem;
+        margin-top: 0.3125rem;
+        width: 100%;
+        padding: 0rem 1rem;
+    }
+    .bx--inline-notification-warning {
+        background-color: #F2994A;
+        font-weight: 400;
+        line-height: .6rem;
+        letter-spacing: 0.13px;
+        /* visibility: hidden; */
+    }
+    .bx--inline-notification--success {
+        background-color: #42BE65;
+        font-weight: 600;
+        line-height: .6rem;
+        letter-spacing: 0.13px;
+    }
+    .sch-side-nav-bg,
+    .sch-nav,
+    .sch-lg-users {
+        display: none;
+    }
+    .sch-dashboard-name {
+        padding-left: 0rem;
+        font-size: 1.2rem;
+    }
+    .sch-card--spc {
+        margin-left: 1rem;
+    }
+    .sch-dash-login-form-wrapper {
+        /* background: #fff; */
+        padding: 0rem 1.5rem;
+    }
+    .d-m-top {
+        margin-top: 1.5rem;
+    }
+    .sch-dash-form-item {
+        margin-left: 0rem;
+    }
+    .sch-dash-form-row,
+    .sch-dash-sm-form-row {
+        margin-top: 1.45rem;
+    }
+    .sch-school-address {
+        padding-top: 0rem;
+    }
+    .sch-card-row {
+        justify-content: center;
+    }
+    .bx--form-item {
+        margin-bottom: 1.1rem;
+        width: 100%;
+        padding: 0rem 1rem;
+    }
+    .menu-list-element {
+        padding: 1.8rem 0rem;
+        margin: 0rem;
+    }
+    .sch-delete-btn {
+        margin-left: 1rem;
+        padding-left: 3px;
+    }
+    .bx--tabs__nav-item:first-child,
+    .sch-tabs-space {
+        padding-left: 1rem;
+    }
+    .sch-sm-p-y {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .sch-container {
+        max-width: 960px;
+    }
+    .sch-col-lg {
+        -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        max-width: 100%;
+    }
+    .sch-col-lg-2 {
+        -ms-flex: 0 0 16.666667%;
+        flex: 0 0 16.666667%;
+        max-width: 16.666667%;
+    }
+    .sch-col-lg-3 {
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+        margin-right: 0.8rem;
+    }
+    .sch-col-lg-dash-3 {
+        -ms-flex: 0 0 26%;
+        flex: 0 0 28%;
+        max-width: 28%;
+        margin-right: 1.5rem;
+        margin-left: 0px;
+        background: #F4F4F4;
+        border: 2px solid #b7b7b7;
+    }
+    .sch-col-lg-4 {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+    .sch-col-lg-5 {
+        -ms-flex: 0 0 41.666667%;
+        flex: 0 0 41.666667%;
+        max-width: 41.666667%;
+    }
+    .sch-col-lg-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .sch-col-lg-7 {
+        -ms-flex: 0 0 58.333333%;
+        flex: 0 0 58.333333%;
+        max-width: 58.333333%;
+    }
+    .sch-dash-col-lg-7 {
+        -ms-flex: 0 0 64%;
+        flex: 0 0 64%;
+        max-width: 64%;
+    }
+    .sch-col-lg-8 {
+        -ms-flex: 0 0 66.666667%;
+        flex: 0 0 66.666667%;
+        max-width: 66.666667%;
+    }
+    .sch-col-lg-dash-9 {
+        -ms-flex: 0 0 78.6%;
+        flex: 0 0 78.6%;
+        max-width: 78.6%;
+    }
+    .sch-col-lg-9 {
+        -ms-flex: 0 0 75%;
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    .sch-col-lg-10 {
+        -ms-flex: 0 0 83.333333%;
+        flex: 0 0 83.333333%;
+        max-width: 83.333333%;
+    }
+    .sch-col-search-10 {
+        -ms-flex: 0 0 80.333333%;
+        flex: 0 0 80.333333%;
+        max-width: 80.333333%;
+    }
+    .sch-col-lg-11 {
+        -ms-flex: 0 0 90%;
+        flex: 0 0 90%;
+        max-width: 90%;
+    }
+    .sch-col-lg-12 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .sch-col-lg-card {
+        -ms-flex: 0 0 20.6%;
+        flex: 0 0 20.6%;
+        max-width: 20.6%;
+        margin-right: 0.75rem;
+        margin-left: 0.75rem;
+    }
+    .sch-mobile-users {
+        display: none;
+    }
+    .login-form {
+        width: 480px;
+        height: 504px;
+        position: fixed;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .schoolmo-logo p {
+        font-weight: 800;
+        font-size: 33px;
+        color: #fff;
+        margin: auto 0rem 0.75rem auto;
+        text-align: center;
+        letter-spacing: 0.23508px;
+    }
+    .schoolmo-logo span {
+        color: #0F62FE;
+    }
+    p {
+        font-size: 0.9rem;
+    }
+    /* login error */
+    .login-form_error {
+        width: 480px;
+        height: 559px;
+        position: fixed;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .bx--form-alert {
+        margin-bottom: 1.5rem;
+        margin-top: 0.3125rem;
+        width: 100%;
+        padding: 0rem 2.5rem;
+    }
+    .bx--inline-notification-warning {
+        background-color: #F2994A;
+        font-weight: 600;
+        line-height: 1.1rem;
+        letter-spacing: 0.16px;
+        /* visibility: hidden; */
+    }
+    .bx--inline-notification--success {
+        background-color: #42BE65;
+        font-weight: 600;
+        line-height: 1.1rem;
+        letter-spacing: 0.16px;
+    }
+    .form-padding {
+        padding: 0rem 0rem 2.2rem 2.5rem;
+    }
+    .sch-side-nav-bg {
+        visibility: visible;
+    }
+    .sch-side-nav-bg,
+    .sch-lg-users {
+        display: block;
+    }
+    .sch-nav {
+        display: flex;
+    }
+    .offset-3 {
+        margin-left: 48%;
+    }
+    .offset-6 {
+        margin-left: 51%;
+        padding-left: 2rem;
+    }
+    .sch-dashboard-name {
+        padding-left: 4rem;
+        font-size: 2rem;
+    }
+    .sch-card--spc {
+        margin-left: 4rem;
+    }
+    .sch-dash-login-form-wrapper {
+        /* background: #fff; */
+        padding: 0rem 2.5rem;
+    }
+    .sch-dash-sm-form-row {
+        margin-top: 0rem;
+    }
+    .d-m-top {
+        margin-top: 2.5rem;
+    }
+    .sch-dash-form-item {
+        margin-left: 6.7rem;
+    }
+    .sch-dash-form-row {
+        margin-top: 1.45rem;
+    }
+    .sch-school-address {
+        padding-top: 0.55rem;
+    }
+    .sch-card-row {
+        justify-content: center;
+    }
+    .bx--form-item {
+        margin-bottom: 1.5rem;
+        width: 100%;
+        padding: 0rem 2.5rem;
+    }
+    .menu-list-element {
+        padding: 0rem 2rem;
+    }
+    .sch-delete-btn {
+        margin-left: 0.3rem;
+    }
+    .bx--tabs__nav-item:first-child {
+        padding-left: 2.5rem;
+    }
+    .sch-sm-p-y {
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+    }
+    .sch-sm-pl,
+    .sch-pl-1 {
+        padding-left: 0px;
+    }
+    .sch-mobile-users,
+    .sch-mobile-nav {
+        display: none;
+    }
+    .d-m-top-2 {
+        margin-top: 2rem;
+    }
+    .sch-m-x {
+        margin-left: 0.35rem !important;
+        margin-right: 0.9375rem !important;
+        /* 0.9375rem */
+    }
+}
+
+@media (min-width: 1200px) {
+    .sch-col-lg {
+        -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        max-width: 100%;
+    }
+    .sch-col-lg-2 {
+        -ms-flex: 0 0 16.666667%;
+        flex: 0 0 16.666667%;
+        max-width: 16.666667%;
+    }
+    .sch-col-lg-3 {
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+        margin-right: 0.8rem;
+    }
+    .sch-col-lg-dash-3 {
+        -ms-flex: 0 0 26%;
+        flex: 0 0 28%;
+        max-width: 28%;
+        margin-right: 1.5rem;
+        margin-left: 0rem;
+        background: #e0e0e0;
+        border: 2px solid #000;
+    }
+    .sch-col-lg-4 {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+    .sch-col-lg-5 {
+        -ms-flex: 0 0 41.666667%;
+        flex: 0 0 41.666667%;
+        max-width: 41.666667%;
+    }
+    .sch-col-lg-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .sch-col-lg-7 {
+        -ms-flex: 0 0 58.333333%;
+        flex: 0 0 58.333333%;
+        max-width: 58.333333%;
+    }
+    .sch-dash-col-lg-7 {
+        -ms-flex: 0 0 64%;
+        flex: 0 0 64%;
+        max-width: 64%;
+        margin: 0;
+    }
+    .sch-col-lg-8 {
+        -ms-flex: 0 0 66.666667%;
+        flex: 0 0 66.666667%;
+        max-width: 66.666667%;
+    }
+    .sch-col-lg-dash-9 {
+        -ms-flex: 0 0 78.6%;
+        flex: 0 0 78.6%;
+        max-width: 78.6%;
+    }
+    .sch-col-lg-9 {
+        -ms-flex: 0 0 75%;
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    .sch-col-lg-10 {
+        -ms-flex: 0 0 83.333333%;
+        flex: 0 0 83.333333%;
+        max-width: 83.333333%;
+    }
+    .sch-col-search-10 {
+        -ms-flex: 0 0 80.333333%;
+        flex: 0 0 80.333333%;
+        max-width: 80.333333%;
+    }
+    .sch-col-lg-11 {
+        -ms-flex: 0 0 90%;
+        flex: 0 0 90%;
+        max-width: 90%;
+    }
+    .sch-col-lg-12 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .sch-mobile-users {
+        display: none;
+    }
+    .sch-col-lg-card {
+        -ms-flex: 0 0 20.6%;
+        flex: 0 0 20.6%;
+        max-width: 20.6%;
+        margin-right: 0.75rem;
+        margin-left: 0.75rem;
+    }
+    .login-form {
+        width: 480px;
+        height: 504px;
+        position: fixed;
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%, -50%);
+    }
+    .schoolmo-logo p {
+        font-weight: 800;
+        font-size: 33px;
+        color: #fff;
+        margin: auto 0rem 0.75rem auto;
+        text-align: center;
+        letter-spacing: 0.23508px;
+    }
+    .schoolmo-logo span {
+        color: #0F62FE;
+    }
+    p {
+        font-size: 0.9rem;
+    }
+    /* login error */
+    .login-form_error {
+        width: 480px;
+        height: 559px;
+        position: fixed;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .bx--form-alert {
+        margin-bottom: 1.5rem;
+        margin-top: 0.3125rem;
+        width: 100%;
+        padding: 0rem 2.5rem;
+    }
+    .bx--inline-notification-warning {
+        background-color: #F2994A;
+        font-weight: 600;
+        line-height: 1.1rem;
+        letter-spacing: 0.16px;
+        /* visibility: hidden; */
+    }
+    .bx--inline-notification--success {
+        background-color: #42BE65;
+        font-weight: 600;
+        line-height: 1.1rem;
+        letter-spacing: 0.16px;
+    }
+    .form-padding {
+        padding: 0rem 0rem 2.2rem 2.5rem;
+    }
+    .sch-side-nav-bg,
+    .sch-lg-users {
+        display: block;
+    }
+    .sch-nav {
+        display: flex;
+    }
+    .offset-3 {
+        margin-left: 48%;
+    }
+    .offset-6 {
+        margin-left: 51%;
+        padding-left: 2rem;
+    }
+    .sch-sm-p-y {
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+    }
+    .sch-dashboard-name {
+        padding-left: 4rem;
+        font-size: 2rem;
+    }
+    .sch-card--spc {
+        margin-left: 4rem;
+    }
+    .sch-dash-login-form-wrapper {
+        /* background: #fff; */
+        padding: 0rem 2.5rem;
+    }
+    .d-m-top {
+        margin-top: 2.5rem;
+    }
+    .sch-dash-form-item {
+        margin-left: 6.7rem;
+    }
+    .sch-dash-form-row {
+        margin-top: 1.45rem;
+    }
+    .sch-school-address {
+        padding-top: 0.55rem;
+    }
+    .sch-card-row {
+        justify-content: center;
+    }
+    .bx--form-item {
+        margin-bottom: 1.5rem;
+        width: 100%;
+        padding: 0rem 2.5rem;
+    }
+    .menu-list-element {
+        padding: 0rem 2rem;
+    }
+    .sch-delete-btn {
+        margin-left: 0.3rem;
+    }
+    .bx--tabs__nav-item:first-child {
+        padding-left: 2.5rem;
+    }
+    .sch-sm-pl,
+    .sch-pl-1 {
+        padding-left: 0px;
+    }
+    .sch-mobile-users,
+    .sch-mobile-nav {
+        display: none;
+    }
+    .sch-m-x {
+        margin-left: 0.35rem !important;
+        margin-right: 0.9375rem !important;
+        /* 0.9375rem */
+    }
+    .sch-dash-sm-form-row {
+        margin-top: 0rem;
+    }
+    .d-m-top-2 {
+        margin-top: 2rem;
+    }
+}

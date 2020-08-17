@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://unpkg.com/carbon-components/css/carbon-components.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/carbon-addons-bluemix@0.3.0/css/carbon-components.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <title>SchoolMo </title>
+</head>
+
+<body class="section-wrapper">
+    <!-- navigation -->
+    <nav class=" bx--cloud-header sch-nav">
+        <div class="bx--cloud-header__wrapper ">
+
+            <a href="# " class=" schoolmo-logo ">
+                <svg width="96" height="19" viewBox="0 0 96 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.544 18.288C6.44 18.288 5.44 18.104 4.544 17.736C3.648 17.368 2.88 16.816 2.24 16.08C1.616 15.344 1.128 14.44 0.776 13.368C0.424 12.296 0.248 11.048 0.248 9.624C0.248 8.216 0.424 6.976 0.776 5.904C1.128 4.816 1.616 3.904 2.24 3.168C2.88 2.432 3.648 1.88 4.544 1.512C5.44 1.144 6.44 0.959999 7.544 0.959999C8.648 0.959999 9.648 1.144 10.544 1.512C11.44 1.88 12.208 2.432 12.848 3.168C13.488 3.904 13.976 4.816 14.312 5.904C14.664 6.976 14.84 8.216 14.84 9.624C14.84 11.048 14.664 12.296 14.312 13.368C13.976 14.44 13.488 15.344 12.848 16.08C12.208 16.816 11.44 17.368 10.544 17.736C9.648 18.104 8.648 18.288 7.544 18.288ZM7.544 15.48C8.744 15.48 9.696 15.08 10.4 14.28C11.12 13.48 11.48 12.36 11.48 10.92V8.328C11.48 6.888 11.12 5.768 10.4 4.968C9.696 4.168 8.744 3.768 7.544 3.768C6.344 3.768 5.384 4.168 4.664 4.968C3.96 5.768 3.608 6.888 3.608 8.328V10.92C3.608 12.36 3.96 13.48 4.664 14.28C5.384 15.08 6.344 15.48 7.544 15.48ZM17.9619 18V5.472H21.0339V7.56H21.1539C21.4099 6.888 21.8099 6.328 22.3539 5.88C22.9139 5.416 23.6819 5.184 24.6579 5.184C25.9539 5.184 26.9459 5.608 27.6339 6.456C28.3219 7.304 28.6659 8.512 28.6659 10.08V18H25.5939V10.392C25.5939 9.496 25.4339 8.824 25.1139 8.376C24.7939 7.928 24.2659 7.704 23.5299 7.704C23.2099 7.704 22.8979 7.752 22.5939 7.848C22.3059 7.928 22.0419 8.056 21.8019 8.232C21.5779 8.392 21.3939 8.6 21.2499 8.856C21.1059 9.096 21.0339 9.384 21.0339 9.72V18H17.9619Z" fill="white"/>
+                    <path d="M32.3633 1.248H40.1153C40.8033 1.248 41.4193 1.352 41.9633 1.56C42.5233 1.768 42.9953 2.056 43.3793 2.424C43.7633 2.792 44.0513 3.248 44.2433 3.792C44.4513 4.32 44.5553 4.904 44.5553 5.544C44.5553 6.184 44.4673 6.728 44.2913 7.176C44.1313 7.608 43.9073 7.968 43.6193 8.256C43.3473 8.544 43.0273 8.76 42.6593 8.904C42.3073 9.048 41.9393 9.128 41.5553 9.144V9.288C41.9233 9.288 42.3153 9.36 42.7313 9.504C43.1633 9.648 43.5553 9.88 43.9073 10.2C44.2753 10.504 44.5793 10.904 44.8193 11.4C45.0593 11.88 45.1793 12.48 45.1793 13.2C45.1793 13.872 45.0673 14.504 44.8433 15.096C44.6353 15.672 44.3393 16.176 43.9553 16.608C43.5713 17.04 43.1153 17.384 42.5873 17.64C42.0593 17.88 41.4833 18 40.8593 18H32.3633V1.248ZM35.5313 15.312H39.9473C40.5553 15.312 41.0273 15.16 41.3633 14.856C41.6993 14.536 41.8673 14.08 41.8673 13.488V12.672C41.8673 12.08 41.6993 11.624 41.3633 11.304C41.0273 10.984 40.5553 10.824 39.9473 10.824H35.5313V15.312ZM35.5313 8.232H39.4433C40.0193 8.232 40.4673 8.08 40.7873 7.776C41.1073 7.456 41.2673 7.016 41.2673 6.456V5.712C41.2673 5.152 41.1073 4.72 40.7873 4.416C40.4673 4.096 40.0193 3.936 39.4433 3.936H35.5313V8.232ZM53.1534 18.288C52.2574 18.288 51.4494 18.136 50.7294 17.832C50.0254 17.528 49.4174 17.088 48.9054 16.512C48.4094 15.936 48.0254 15.248 47.7534 14.448C47.4814 13.632 47.3454 12.72 47.3454 11.712C47.3454 10.704 47.4814 9.8 47.7534 9C48.0254 8.2 48.4094 7.52 48.9054 6.96C49.4174 6.384 50.0254 5.944 50.7294 5.64C51.4494 5.336 52.2574 5.184 53.1534 5.184C54.0494 5.184 54.8574 5.336 55.5774 5.64C56.2974 5.944 56.9054 6.384 57.4014 6.96C57.9134 7.52 58.3054 8.2 58.5774 9C58.8494 9.8 58.9854 10.704 58.9854 11.712C58.9854 12.72 58.8494 13.632 58.5774 14.448C58.3054 15.248 57.9134 15.936 57.4014 16.512C56.9054 17.088 56.2974 17.528 55.5774 17.832C54.8574 18.136 54.0494 18.288 53.1534 18.288ZM53.1534 15.816C53.9694 15.816 54.6094 15.568 55.0734 15.072C55.5374 14.576 55.7694 13.848 55.7694 12.888V10.56C55.7694 9.616 55.5374 8.896 55.0734 8.4C54.6094 7.904 53.9694 7.656 53.1534 7.656C52.3534 7.656 51.7214 7.904 51.2574 8.4C50.7934 8.896 50.5614 9.616 50.5614 10.56V12.888C50.5614 13.848 50.7934 14.576 51.2574 15.072C51.7214 15.568 52.3534 15.816 53.1534 15.816ZM71.0248 18C70.3528 18 69.8168 17.808 69.4168 17.424C69.0328 17.024 68.7928 16.496 68.6968 15.84H68.5528C68.3448 16.656 67.9208 17.272 67.2808 17.688C66.6408 18.088 65.8488 18.288 64.9048 18.288C63.6248 18.288 62.6408 17.952 61.9528 17.28C61.2648 16.608 60.9208 15.712 60.9208 14.592C60.9208 13.296 61.3848 12.336 62.3128 11.712C63.2408 11.072 64.5608 10.752 66.2728 10.752H68.4088V9.84C68.4088 9.136 68.2248 8.592 67.8568 8.208C67.4888 7.824 66.8968 7.632 66.0808 7.632C65.3608 7.632 64.7768 7.792 64.3288 8.112C63.8968 8.416 63.5288 8.784 63.2248 9.216L61.4008 7.584C61.8648 6.864 62.4808 6.288 63.2488 5.856C64.0168 5.408 65.0328 5.184 66.2968 5.184C67.9928 5.184 69.2808 5.568 70.1608 6.336C71.0408 7.104 71.4808 8.208 71.4808 9.648V15.552H72.7288V18H71.0248ZM65.9368 16.056C66.6248 16.056 67.2088 15.904 67.6888 15.6C68.1688 15.296 68.4088 14.848 68.4088 14.256V12.6H66.4408C64.8408 12.6 64.0408 13.112 64.0408 14.136V14.544C64.0408 15.056 64.2008 15.44 64.5208 15.696C64.8568 15.936 65.3288 16.056 65.9368 16.056ZM75.3151 18V5.472H78.3871V8.064H78.5071C78.5871 7.728 78.7071 7.408 78.8671 7.104C79.0431 6.784 79.2671 6.504 79.5391 6.264C79.8111 6.024 80.1311 5.832 80.4991 5.688C80.8831 5.544 81.3231 5.472 81.8191 5.472H82.4911V8.376H81.5311C80.4911 8.376 79.7071 8.528 79.1791 8.832C78.6511 9.136 78.3871 9.632 78.3871 10.32V18H75.3151ZM92.4957 15.912H92.3757C92.1517 16.632 91.7277 17.208 91.1037 17.64C90.4797 18.072 89.7517 18.288 88.9197 18.288C87.3357 18.288 86.1197 17.72 85.2717 16.584C84.4397 15.448 84.0237 13.824 84.0237 11.712C84.0237 9.616 84.4397 8.008 85.2717 6.888C86.1197 5.752 87.3357 5.184 88.9197 5.184C89.7517 5.184 90.4797 5.4 91.1037 5.832C91.7277 6.248 92.1517 6.816 92.3757 7.536H92.4957V0.24H95.5677V18H92.4957V15.912ZM89.9037 15.744C90.6397 15.744 91.2557 15.568 91.7517 15.216C92.2477 14.864 92.4957 14.36 92.4957 13.704V9.72C92.4957 9.112 92.2477 8.624 91.7517 8.256C91.2557 7.888 90.6397 7.704 89.9037 7.704C89.1037 7.704 88.4557 7.976 87.9597 8.52C87.4797 9.048 87.2397 9.76 87.2397 10.656V12.816C87.2397 13.712 87.4797 14.424 87.9597 14.952C88.4557 15.48 89.1037 15.744 89.9037 15.744Z" fill="#0F62FE"/>
+                    </svg>
+
+            </a>
+
+        </div>
+        <div class="bx--cloud-header">
+            <ul class="bx--cloud-header-list  ">
+                <li class="sch-Onboard-app   ">
+                    SchoolMo Onboarding Application
+
+                </li>
+            </ul>
+        </div>
+        <div class="bx--cloud-header-right ">
+            <ul class="bx--cloud-header-list  ">
+                <a href="#">
+                    <li class="bx--cloud-header-list__item bx--cloud-header-list__item--icon ">
+                        Logout
+                        <svg width="24 " height="24 " viewBox="0 0 24 24 " fill="none " xmlns="http://www.w3.org/2000/svg " class="logout-svg">
+                        <path d="M9 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H9 " stroke="white " stroke-width="2 " stroke-linecap="round" stroke-linejoin="round "/>
+                        <path d="M16 17L21 12L16 7 " stroke="white " stroke-width="2 " stroke-linecap="round " stroke-linejoin="round "/>
+                        <path d="M21 12H9 " stroke="white " stroke-width="2 " stroke-linecap="round " stroke-linejoin="round "/>
+                    </svg>
+
+                    </li>
+                </a>
+                <a href="#">
+                    <li class="bx--cloud-header-list__item bx--cloud-header-list__item--icon menu-list-element ">
+                        <svg width="27 " height="28 " viewBox="0 0 27 28 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+                        <title>notifications</title>
+                        <path d="M21 12C21 10.4087 20.3679 8.88258 19.2426 7.75736C18.1174 6.63214 16.5913 6 15 6C13.4087 6 11.8826 6.63214 10.7574 7.75736C9.63214 8.88258 9 10.4087 9 12C9 19 6 21 6 21H24C24 21 21 19 21 12Z " stroke="white" stroke-width="2 " stroke-linecap="round " stroke-linejoin="round "/>
+                        <path d="M16.73 25C16.5542 25.3031 16.3019 25.5547 15.9982 25.7295C15.6946 25.9044 15.3504 25.9965 15 25.9965C14.6496 25.9965 14.3054 25.9044 14.0018 25.7295C13.6982 25.5547 13.4458 25.3031 13.27 25 " stroke="white " stroke-width="2" stroke-linecap="round " stroke-linejoin="round "/>
+                        <circle cx="8 " cy="8 " r="8 " fill="#F25C78"/>
+                        <path d="M5.80859 11H4.66113V6.39062C4.66113 5.84049 4.67415 5.4043 4.7002 5.08203C4.62533 5.16016 4.53255 5.24642 4.42188 5.34082C4.31445 5.43522 3.94987 5.7347 3.32812 6.23926L2.75195 5.51172L4.85156 3.86133H5.80859V11ZM12.9912 11H8.15234V10.1309L9.99316
+                        8.28027C10.5368 7.72363 10.8965 7.32975 11.0723 7.09863C11.2513 6.86426 11.3815 6.64453 11.4629 6.43945C11.5443 6.23438 11.585 6.01465 11.585 5.78027C11.585 5.45801 11.4873 5.2041 11.292 5.01855C11.0999 4.83301 10.833 4.74023 10.4912 4.74023C10.2178 4.74023
+                        9.95247 4.79069 9.69531 4.8916C9.44141 4.99251 9.14681 5.1748 8.81152 5.43848L8.19141 4.68164C8.58854 4.34635 8.97428 4.10872 9.34863 3.96875C9.72298 3.82878 10.1217 3.75879 10.5449 3.75879C11.209 3.75879 11.7412 3.93294 12.1416 4.28125C12.542 4.6263
+                        12.7422 5.0918 12.7422 5.67773C12.7422 6 12.6836 6.30599 12.5664 6.5957C12.4525 6.88542 12.2751 7.1849 12.0342 7.49414C11.7965 7.80013 11.3994 8.21517 10.8428 8.73926L9.60254 9.94043V9.98926H12.9912V11Z " fill="white "/>
+                    </svg>
+
+                    </li>
+                </a>
+
+                <li class="bx--cloud-header-list__item bx--cloud-header-list__item--icon ">
+                    <button class="bx--cloud-header-list__btn " type="button ">
+                <svg class="bx--cloud-header__user-icon " viewBox="0 0 24 24 ">
+                <title>user</title>
+                  <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.6 0 12 0zm0 4.6c2.8 0 5 2.2 5 5s-2.2 5-5 5-5-2.2-5-5 2.2-5 5-5zm7 14.5c-1.8 1.8-4.3 2.9-7 2.9s-5.2-1.1-7-2.9v-1.6c0-1.3.7-2 2-2h10c1.3 0 2 .7 2 2v1.6z "
+                  />
+                </svg>
+              </button>
+                </li>
+                <li class="bx--cloud-header-list__item bx--cloud-header-list__item--icon ">
+                    <div class="dropdown ">
+
+                        <button class="dropbtn ">Dropdown 
+
+                    </button>
+                        <div class="dropdown-content ">
+                            <a href="# ">Link 1</a>
+                            <a href="# ">Link 2</a>
+                            <a href="# ">Link 3</a>
+                        </div>
+                    </div>
+                    <svg width="16 " height="16 " viewBox="0 0 16 16 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+                      <path fill-rule="evenodd " clip-rule="evenodd " d="M11.5 6L8 10L4.5 6H11.5Z " fill="white "/>
+                      <mask id="mask0 " mask-type="alpha " maskUnits="userSpaceOnUse " x="4 " y="6 " width="8 " height="4 ">
+                      <path fill-rule="evenodd " clip-rule="evenodd " d="M11.5 6L8 10L4.5 6H11.5Z " fill="white "/>
+                      </mask>
+                      <g mask="url(#mask0) ">
+                      </g>
+                      </svg>
+
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- end -->
+
+    <!-- mobile navigation  -->
+    <div class="sch-mobile-nav" id="mobileNav">
+        <a href="#home" class="mobile-active">Onboard</a>
+        <a href="#news">Notification</a>
+        <a href="#contact">Dashboard</a>
+        <a href="#contact">Users</a>
+        <a href="#contact">Schools</a>
+        <div class="mobile-nav-dropdown">
+            <button class="mobile-nav-dropbtn">Settings 
+            <i class="fa fa-caret-down"></i>
+          </button>
+            <div class="mobile-nav-dropdown-content">
+                <a href="#">Account</a>
+                <a href="#">Profile</a>
+                <a href="#">Security</a>
+            </div>
+        </div>
+        <a href="#about">About</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="mobileNavbar()">&#9776;</a>
+    </div>
+    <section class="section-wrapper ">
+        <div class="sch-row ">
+            <div class="sch-col-lg-2 ">
+                <div class="  bx--side-nav__navigation sch-side-nav-bg ">
+                    <div class=" bx--side-nav__navigation">
+                        <ul class=" " id="side-nav">
+                            <li class="  sch-m-t">
+                                <a href="#" class="side-nav-a active">
+                                    <i data-feather="calendar">
+                                     
+                                        </i> <span>  Dashboard </span>
+                                </a>
+                            </li>
+                            <li class=" sch-m-y ">
+                                <a href="#" class=" side-nav-a ">
+                                    <i data-feather="file-text">
+                                        
+                                        </i> <span>  Schools </span>
+                                </a>
+                            </li>
+                            </a>
+
+                            <li class="  sch-m-y  ">
+                                <a href="#" class="side-nav-a ">
+                                    <i data-feather="users">
+                                     
+                                    </i><span> Users</span>
+
+                                </a>
+                            </li>
+
+                            <nav class='sch-side-nav sch-m-y '>
+                                <ul class=" ">
+                                    <li class='sub-menu'>
+                                        <a href='#settings' class="side-nav-a "> <i data-feather="settings">
+                                       
+                                    </i><span>Settings</span>
+                                            <div class='fa right'></div>
+                                        </a>
+                                        <ul class="sch-side-dropdwn-items ">
+                                            <li class="sch-side-dropdwn-items sch-drop-color"><a href='#settings'>Account</a>
+                                            </li>
+                                            <li class="sch-side-dropdwn-items sch-drop-color"><a href='#settings'>Profile</a></li>
+                                            <li class="sch-side-dropdwn-items sch-drop-color"><a href='#settings'>Secruity </a></li>
+                                            <li class="sch-side-dropdwn-items sch-drop-color"><a href='#settings'>Password</a></li>
+                                            <li class="sch-side-dropdwn-items sch-drop-color"><a href='#settings'>Notification</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
+
+                        </ul>
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="sch-col-lg-10 sch-col-sm-12 sch-col-md-12 ">
+                <div class="sch-row d-m-top-1 sch-sm-pl">
+                    <div class="sch-col-lg-dash-9 sch-dashboard-name  ">
+                        <div class="sch-row">
+                            <div class="sch-col-lg-1 ">
+                                <p class="sch-schools-name">School |</p>
+                            </div>
+                            <div class="sch-col-lg-7 sch-dropbtn-align sch-m-x">
+                                <h2>Primary school</h2>
+                            </div>
+                            <div class="sch-col-lg-12 sch-col-md-12 sch-col-sm-12">
+                                <p>Manage all school data and information here.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sch-col-lg-2 sch-top-btn sch-sm-p-y ">
+                        <button class="bx--btn btn-primary bx--btn--field" type="button ">
+                            Onboard School &nbsp; &nbsp;
+                            <svg focusable="false " preserveAspectRatio="xMidYMid meet " style="will-change: transform; " xmlns="http://www.w3.org/2000/svg " class="bx--btn__icon " width="16 " height="16 " viewBox="0 0 16 16 " aria-hidden="true" fill="#fff">
+                                <path d="M9 7L9 3 7 3 7 7 3 7 3 9 7 9 7 13 9 13 9 9 13 9 13 7z "></path>
+                            </svg>
+                          </button>
+
+                    </div>
+                </div>
+                <div class="sch-row d-m-top-2 sch-card--spc  ">
+                    <div class="sch-col-lg-dash-3 sch-col-sm-11 sch-col-md-11 ">
+                        <div class="sch-m-y ">
+                            <div class="sch-row sch-m-y sch-m-x sch-card-row">
+                                <div class="sch-col-lg-10 sch-col-sm-10 sch-col-md-10">
+                                    <div class="">
+                                        <div data-search role="search" class="bx--search bx--search--lg ">
+                                            <label id="search-input-label-1" class="bx--label" for="search__input-1">Search</label>
+                                            <input class="bx--search-input sch-dash-search" type="text" id="search__input-1" placeholder="Search">
+                                            <svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" class="bx--search-magnifier" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M15,14.3L10.7,10c1.9-2.3,1.6-5.8-0.7-7.7S4.2,0.7,2.3,3S0.7,8.8,3,10.7c2,1.7,5,1.7,7,0l4.3,4.3L15,14.3z M2,6.5	C2,4,4,2,6.5,2S11,4,11,6.5S9,11,6.5,11S2,9,2,6.5z"></path></svg>
+                                            <button class="bx--search-close bx--search-close--hidden" title="Clear search
+                                              input" aria-label="Clear search input">
+                                            <svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" class="bx--search-clear" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M12 4.7L11.3 4 8 7.3 4.7 4 4 4.7 7.3 8 4 11.3 4.7 12 8 8.7 11.3 12 12 11.3 8.7 8z"></path></svg>
+                                            
+                                            
+                                          </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="sch-col-lg-1 sch-dropbtn-align sch-delete-btn "><svg data-modal-target="#modal-ptxyfo5520i" width="36" height="40" viewBox="0 0 32 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="50" height="40" fill="#161616"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.0001 7.49976H13.0001V8.99976H19.0001V7.49976ZM7.00024 11.9999V10.4999H25.0002V11.9999H23.5002V26.9999C23.5002 27.8284 22.8287 28.4999 22.0002 28.4999H10.0002C9.17182 28.4999 8.50024 27.8284 8.50024 26.9999V11.9999H7.00024ZM13.0001 14.9999H14.5001V23.9999H13.0001V14.9999ZM17.5001 14.9999H19.0001V23.9999H17.5001V14.9999ZM10.0004 26.9998V11.9998H22.0004V26.9998H10.0004Z" fill="white"/>
+                                    <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="7" y="7" width="19" height="22">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.0001 7.49976H13.0001V8.99976H19.0001V7.49976ZM7.00024 11.9999V10.4999H25.0002V11.9999H23.5002V26.9999C23.5002 27.8284 22.8287 28.4999 22.0002 28.4999H10.0002C9.17182 28.4999 8.50024 27.8284 8.50024 26.9999V11.9999H7.00024ZM13.0001 14.9999H14.5001V23.9999H13.0001V14.9999ZM17.5001 14.9999H19.0001V23.9999H17.5001V14.9999ZM10.0004 26.9998V11.9998H22.0004V26.9998H10.0004Z" fill="white"/>
+                                    </mask>
+                                    <g mask="url(#mask0)">
+                                    </g>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="sch-table-list">
+                                <table class="bx--data-table     bx--data-table--sort ">
+
+                                    <tbody>
+                                        <tr>
+
+                                            <td class="bx--table-column-checkbox sch-p-l">
+                                                <input data-event="select" id="bx--checkbox-11" class="bx--checkbox" type="checkbox" value="green" name="checkbox-11">
+                                                <label for="bx--checkbox-11" class="bx--checkbox-label" aria-label="Label name"></label>
+                                            </td>
+
+
+                                            <td>
+                                                <p class="sch-txt-bold">Gracious International school</p>
+                                                <legend class="bx--label">graciousIntschool@gmail.com</legend>
+                                            </td>
+
+
+
+
+
+                                        </tr>
+                                        <tr>
+                                            <td class="bx--table-column-checkbox sch-p-l">
+                                                <input data-event="select" id="bx--checkbox-12" class="bx--checkbox" type="checkbox" value="green" name="checkbox-12">
+                                                <label for="bx--checkbox-12" class="bx--checkbox-label" aria-label="Label name"></label>
+                                            </td>
+
+
+
+
+                                            <td>
+
+                                                <p class="sch-txt-bold"> Gracious International school</p>
+                                                <legend class="bx--label">graciousIntschool@gmail.com</legend>
+                                            </td>
+
+
+
+
+
+                                        </tr>
+                                        <tr>
+
+                                            <td class="bx--table-column-checkbox sch-p-l">
+                                                <input data-event="select" id="bx--checkbox-13" class="bx--checkbox" type="checkbox" value="green" name="checkbox-13">
+                                                <label for="bx--checkbox-13" class="bx--checkbox-label" aria-label="Label name"></label>
+                                            </td>
+
+
+                                            <td>
+
+                                                <p class="sch-txt-bold"> Gracious International school</p>
+                                                <legend class="bx--label">graciousIntschool@gmail.com</legend>
+                                            </td>
+
+
+
+
+
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- users desktop display -->
+                    <div class="sch-dash-col-lg-7 sch-lg-users sch-dash-form-1">
+
+                        <div class="bx--data-table-container " data-table>
+                            <div class="bx--data-table-header">
+                                <h4 class="bx--data-table-header__title">Table title</h4>
+                                <p class="bx--data-table-header__description"></p>
+                            </div>
+                            <!-- Toolbar Content -->
+                            <section class="bx--table-toolbar ">
+                                <!-- Batch actions -->
+                                <div class="bx--batch-actions" aria-label="Table Action Bar">
+                                    <div class="bx--action-list">
+                                        <button class="bx--btn bx--btn--primary" type="button">Delete<svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" class="bx--btn__icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 6H7V12H6zM9 6H10V12H9z"></path><path d="M2 3v1h1v10c0 .6.4 1 1 1h8c.6 0 1-.4 1-1V4h1V3H2zM4 14V4h8v10H4zM6 1H10V2H6z"></path></svg>
+                                        </button>
+                                        <button class="bx--btn bx--btn--primary" type="button">Save <svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" class="bx--btn__icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M13.9,4.6l-2.5-2.5C11.3,2.1,11.1,2,11,2H3C2.4,2,2,2.4,2,3v10c0,0.6,0.4,1,1,1h10c0.6,0,1-0.4,1-1V5	C14,4.9,13.9,4.7,13.9,4.6z M6,3h4v2H6V3z M10,13H6V9h4V13z M11,13V9c0-0.6-0.4-1-1-1H6C5.4,8,5,8.4,5,9v4H3V3h2v2c0,0.6,0.4,1,1,1	h4c0.6,0,1-0.4,1-1V3.2l2,2V13H11z"></path></svg>
+                                        </button>
+                                        <button class="bx--btn bx--btn--primary" type="button">Edit<svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" class="bx--btn__icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M13 7L12.3 6.3 8.5 10.1 8.5 1 7.5 1 7.5 10.1 3.7 6.3 3 7 8 12zM13 12v2H3v-2H2v2l0 0c0 .6.4 1 1 1h10c.6 0 1-.4 1-1l0 0v-2H13z"></path></svg>
+                                        </button>
+                                        <button data-event="action-bar-cancel" class="bx--btn bx--btn--primary bx--batch-summary__cancel">Cancel</button>
+                                    </div>
+                                    <div class="bx--batch-summary">
+                                        <p class="bx--batch-summary__para">
+                                            <span data-items-selected>3</span> items selected
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="bx--toolbar-content">
+                                    <!--  Default hidden search -->
+
+                                    <!-- Persistent Search -->
+                                    <div class="bx--toolbar-search-container-persistent">
+                                        <div data-search class="bx--search bx--search--sm" role="search">
+                                            <div class="bx--search-magnifier">
+                                                <svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M15,14.3L10.7,10c1.9-2.3,1.6-5.8-0.7-7.7S4.2,0.7,2.3,3S0.7,8.8,3,10.7c2,1.7,5,1.7,7,0l4.3,4.3L15,14.3z M2,6.5	C2,4,4,2,6.5,2S11,4,11,6.5S9,11,6.5,11S2,9,2,6.5z"></path></svg>
+                                            </div>
+                                            <label id="search-input-label-1" class="bx--label" for="search__input-2">Search</label>
+                                            <input class="bx--search-input" type="text" id="search__input-2" role="search" placeholder="Search" aria-labelledby="search-input-label-1">
+                                            <button class="bx--search-close bx--search-close--hidden" title="Clear search input" aria-label="Clear search input">
+                                                <svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M12 4.7L11.3 4 8 7.3 4.7 4 4 4.7 7.3 8 4 11.3 4.7 12 8 8.7 11.3 12 12 11.3 8.7 8z"></path></svg>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <!-- Toolbar Overflow Menu -->
+                                    <div class="bx--overflow-menu bx--toolbar-action" data-overflow-menu role="button" tabindex="0" aria-label="Overflow" aria-haspopup="true" aria-expanded="false">
+                                        <svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" class="bx--toolbar-action__icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M13.5,8.4c0-0.1,0-0.3,0-0.4c0-0.1,0-0.3,0-0.4l1-0.8c0.4-0.3,0.4-0.9,0.2-1.3l-1.2-2C13.3,3.2,13,3,12.6,3	c-0.1,0-0.2,0-0.3,0.1l-1.2,0.4c-0.2-0.1-0.4-0.3-0.7-0.4l-0.3-1.3C10.1,1.3,9.7,1,9.2,1H6.8c-0.5,0-0.9,0.3-1,0.8L5.6,3.1	C5.3,3.2,5.1,3.3,4.9,3.4L3.7,3C3.6,3,3.5,3,3.4,3C3,3,2.7,3.2,2.5,3.5l-1.2,2C1.1,5.9,1.2,6.4,1.6,6.8l0.9,0.9c0,0.1,0,0.3,0,0.4	c0,0.1,0,0.3,0,0.4L1.6,9.2c-0.4,0.3-0.5,0.9-0.2,1.3l1.2,2C2.7,12.8,3,13,3.4,13c0.1,0,0.2,0,0.3-0.1l1.2-0.4	c0.2,0.1,0.4,0.3,0.7,0.4l0.3,1.3c0.1,0.5,0.5,0.8,1,0.8h2.4c0.5,0,0.9-0.3,1-0.8l0.3-1.3c0.2-0.1,0.4-0.2,0.7-0.4l1.2,0.4	c0.1,0,0.2,0.1,0.3,0.1c0.4,0,0.7-0.2,0.9-0.5l1.1-2c0.2-0.4,0.2-0.9-0.2-1.3L13.5,8.4z M12.6,12l-1.7-0.6c-0.4,0.3-0.9,0.6-1.4,0.8	L9.2,14H6.8l-0.4-1.8c-0.5-0.2-0.9-0.5-1.4-0.8L3.4,12l-1.2-2l1.4-1.2c-0.1-0.5-0.1-1.1,0-1.6L2.2,6l1.2-2l1.7,0.6	C5.5,4.2,6,4,6.5,3.8L6.8,2h2.4l0.4,1.8c0.5,0.2,0.9,0.5,1.4,0.8L12.6,4l1.2,2l-1.4,1.2c0.1,0.5,0.1,1.1,0,1.6l1.4,1.2L12.6,12z"></path><path d="M8,11c-1.7,0-3-1.3-3-3s1.3-3,3-3s3,1.3,3,3C11,9.6,9.7,11,8,11C8,11,8,11,8,11z M8,6C6.9,6,6,6.8,6,7.9C6,7.9,6,8,6,8	c0,1.1,0.8,2,1.9,2c0,0,0.1,0,0.1,0c1.1,0,2-0.8,2-1.9c0,0,0-0.1,0-0.1C10,6.9,9.2,6,8,6C8.1,6,8,6,8,6z"></path></svg>
+                                        <ul class="bx--overflow-menu-options bx--overflow-menu--flip" tabindex="-1" role="menu" aria-label="Overflow" data-floating-menu-direction="bottom">
+                                            <li class="bx--overflow-menu-options__option  bx--overflow-menu--data-table " role="presentation">
+                                                <button class="bx--overflow-menu-options__btn" role="menuitem" data-floating-menu-primary-focus>
+                                                    <div class="bx--overflow-menu-options__option-content">Option 1</div>
+                                                </button>
+                                            </li>
+                                            <li class="bx--overflow-menu-options__option  bx--overflow-menu--data-table " role="presentation">
+                                                <button class="bx--overflow-menu-options__btn" role="menuitem">
+                                                    <div class="bx--overflow-menu-options__option-content">Option 2      </div>
+                                                </button>
+                                            </li>
+                                            <li class="bx--overflow-menu-options__option  bx--overflow-menu--data-table " role="presentation">
+                                                <button class="bx--overflow-menu-options__btn" role="menuitem">
+                                                    <div class="bx--overflow-menu-options__option-content">Option 3
+                                                    </div>                           
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <!--  Toolbar primary button -->
+                                    <button class="bx--btn bx--btn--sm bx--btn--primary">Create User
+                                        <svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" class="bx--btn__icon sch-datatable-icon" width="20" height="20" viewBox="0 0 32 32" aria-hidden="true"><path d="M17 15L17 7 15 7 15 15 7 15 7 17 15 17 15 25 17 25 17 17 25 17 25 15 17 15z"></path></svg>
+                                    </button>
+                                </div>
+                            </section>
+                            <!-- End Toolbar Content -->
+
+                            <!-- Table -->
+                            <table class="bx--data-table  bx--data-table--sort  ">
+                                <thead>
+                                    <tr>
+                                        <th class="bx--table-column-checkbox">
+                                            <!-- checkbox th -->
+                                            <input data-event="select-all" id="bx--checkbox-20" class="bx--checkbox" type="checkbox" value="green" name="checkbox-20">
+                                            <label for="bx--checkbox-20" class="bx--checkbox-label" aria-label="Label name"></label>
+                                        </th>
+                                        <th>
+                                            <!-- checkbox th -->
+                                            <!-- sortable th  -->
+                                            <button class="bx--table-sort" data-event="sort" title="Name">
+                                            <span class="bx--table-header-label">Name</span>
+                                            <svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" class="bx--table-sort__icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M12.3 9.3L8.5 13.1 8.5 1 7.5 1 7.5 13.1 3.7 9.3 3 10 8 15 13 10z"></path></svg>
+                                            <svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" class="bx--table-sort__icon-unsorted" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M13.8 10.3L12 12.1 12 2 11 2 11 12.1 9.2 10.3 8.5 11 11.5 14 14.5 11zM4.5 2L1.5 5 2.2 5.7 4 3.9 4 14 5 14 5 3.9 6.8 5.7 7.5 5z"></path></svg>
+                                            </button>
+                                            <!-- no sort th -->
+                                        </th>
+                                        <th>
+                                            <!-- checkbox th -->
+                                            <!-- sortable th  -->
+                                            <button class="bx--table-sort" data-event="sort" title="email">
+                                            <span class="bx--table-header-label">Email</span>
+                                            <svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" class="bx--table-sort__icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M12.3 9.3L8.5 13.1 8.5 1 7.5 1 7.5 13.1 3.7 9.3 3 10 8 15 13 10z"></path></svg>
+                                            <svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" class="bx--table-sort__icon-unsorted" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M13.8 10.3L12 12.1 12 2 11 2 11 12.1 9.2 10.3 8.5 11 11.5 14 14.5 11zM4.5 2L1.5 5 2.2 5.7 4 3.9 4 14 5 14 5 3.9 6.8 5.7 7.5 5z"></path></svg>
+                                            </button>
+                                            <!-- no sort th -->
+                                        </th>
+                                        <th>
+                                            <!-- checkbox th -->
+                                            <!-- sortable th  -->
+                                            <button class="bx--table-sort" data-event="sort" title="Phone Number">
+                                            <span class="bx--table-header-label">Phone Number</span>
+                                            <svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" class="bx--table-sort__icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M12.3 9.3L8.5 13.1 8.5 1 7.5 1 7.5 13.1 3.7 9.3 3 10 8 15 13 10z"></path></svg>
+                                            <svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" class="bx--table-sort__icon-unsorted" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M13.8 10.3L12 12.1 12 2 11 2 11 12.1 9.2 10.3 8.5 11 11.5 14 14.5 11zM4.5 2L1.5 5 2.2 5.7 4 3.9 4 14 5 14 5 3.9 6.8 5.7 7.5 5z"></path></svg>
+                                            </button>
+                                            <!-- no sort th -->
+                                        </th>
+                                        <th>
+                                            <!-- checkbox th -->
+                                            <!-- sortable th  -->
+                                            <button class="bx--table-sort" data-event="sort" title="job">
+                                            <span class="bx--table-header-label">Job title</span>
+                                            <svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" class="bx--table-sort__icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M12.3 9.3L8.5 13.1 8.5 1 7.5 1 7.5 13.1 3.7 9.3 3 10 8 15 13 10z"></path></svg>
+                                            <svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" class="bx--table-sort__icon-unsorted" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M13.8 10.3L12 12.1 12 2 11 2 11 12.1 9.2 10.3 8.5 11 11.5 14 14.5 11zM4.5 2L1.5 5 2.2 5.7 4 3.9 4 14 5 14 5 3.9 6.8 5.7 7.5 5z"></path></svg>
+                                            </button>
+                                            <!-- no sort th -->
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <!-- expand icon td -->
+                                        <td class="bx--table-column-checkbox">
+                                            <input data-event="select" id="bx--checkbox-16" class="bx--checkbox" type="checkbox" value="green" name="checkbox-16">
+                                            <label for="bx--checkbox-16" class="bx--checkbox-label" aria-label="Label name"></label>
+                                        </td>
+                                        <!-- inline action td's -->
+                                        <!-- expand icon td -->
+                                        <td>
+                                            <!-- truncated new markup -->
+                                            Albert Ion Usman
+                                        </td>
+                                        <!-- expand icon td -->
+                                        <td>
+                                            <!-- truncated new markup -->
+                                            albertionUsman@gmail.com
+                                        </td>
+                                        <!-- expand icon td -->
+                                        <td>
+                                            <!-- truncated new markup -->
+                                            +234 702 333 1287
+                                        </td>
+                                        <!-- expand icon td -->
+                                        <td>
+                                            <!-- truncated new markup -->
+                                            Boots on ground
+                                        </td>
+                                        <!-- expand icon td -->
+
+                                        <!-- expand icon td -->
+
+                                        <!-- expand icon td -->
+
+                                        <!-- inline edit tds -->
+                                    </tr>
+                                    <!-- Expandable child row -->
+                                    <tr>
+                                        <!-- expand icon td -->
+                                        <td class="bx--table-column-checkbox">
+                                            <input data-event="select" id="bx--checkbox-14" class="bx--checkbox" type="checkbox" value="green" name="checkbox-14">
+                                            <label for="bx--checkbox-14" class="bx--checkbox-label" aria-label="Label name"></label>
+                                        </td>
+                                        <!-- inline action td's -->
+                                        <!-- expand icon td -->
+                                        <td>
+                                            <!-- truncated new markup -->
+                                            Tyron T Unbortea
+                                        </td>
+                                        <!-- expand icon td -->
+                                        <td>
+                                            <!-- truncated new markup -->
+                                            unborteaTTyron@gmail.com
+                                        </td>
+                                        <!-- expand icon td -->
+                                        <td>
+                                            <!-- truncated new markup -->
+                                            +234 907 452 0953
+                                        </td>
+                                        <!-- expand icon td -->
+                                        <td>
+                                            <!-- truncated new markup -->
+                                            Ass head of opereations
+                                        </td>
+                                        <!-- expand icon td -->
+
+                                        <!-- expand icon td -->
+
+                                        <!-- inline edit tds -->
+                                    </tr>
+                                    <!-- Expandable child row -->
+                                    <tr>
+                                        <!-- expand icon td -->
+                                        <td class="bx--table-column-checkbox">
+                                            <input data-event="select" id="bx--checkbox-15" class="bx--checkbox" type="checkbox" value="green" name="checkbox-15">
+                                            <label for="bx--checkbox-15" class="bx--checkbox-label" aria-label="Label name"></label>
+                                        </td>
+                                        <!-- inline action td's -->
+                                        <!-- expand icon td -->
+                                        <td>
+                                            <!-- truncated new markup -->
+                                            Ane I Okarfor Winkie
+                                        </td>
+                                        <!-- expand icon td -->
+                                        <td>
+                                            <!-- truncated new markup -->
+                                            winkielooane@gmail.com
+                                        </td>
+                                        <!-- expand icon td -->
+                                        <td>
+                                            <!-- truncated new markup -->
+                                            +234 813 007 1234
+                                        </td>
+                                        <!-- expand icon td -->
+                                        <td>
+                                            <!-- truncated new markup -->
+                                            Head of admin
+                                        </td>
+                                        <!-- expand icon td -->
+
+                                    </tr>
+                                    <!-- Expandable child row -->
+                                    <tr>
+                                        <!-- expand icon td -->
+                                        <td class="bx--table-column-checkbox">
+                                            <input data-event="select" id="bx--checkbox-15" class="bx--checkbox" type="checkbox" value="green" name="checkbox-15">
+                                            <label for="bx--checkbox-15" class="bx--checkbox-label" aria-label="Label name"></label>
+                                        </td>
+                                        <!-- inline action td's -->
+                                        <!-- expand icon td -->
+                                        <td>
+                                            <!-- truncated new markup -->
+                                            Ane I Okarfor Winkie
+                                        </td>
+                                        <!-- expand icon td -->
+                                        <td>
+                                            <!-- truncated new markup -->
+                                            winkielooane@gmail.com
+                                        </td>
+                                        <!-- expand icon td -->
+                                        <td>
+                                            <!-- truncated new markup -->
+                                            +234 813 007 1234
+                                        </td>
+                                        <!-- expand icon td -->
+                                        <td>
+                                            <!-- truncated new markup -->
+                                            Head of admin
+                                        </td>
+                                        <!-- expand icon td -->
+
+                                    </tr>
+                                    <!-- Expandable child row -->
+                                    <tr>
+                                        <!-- expand icon td -->
+                                        <td class="bx--table-column-checkbox">
+                                            <input data-event="select" id="bx--checkbox-15" class="bx--checkbox" type="checkbox" value="green" name="checkbox-15">
+                                            <label for="bx--checkbox-15" class="bx--checkbox-label" aria-label="Label name"></label>
+                                        </td>
+                                        <!-- inline action td's -->
+                                        <!-- expand icon td -->
+                                        <td>
+                                            <!-- truncated new markup -->
+                                            Ane I Okarfor Winkie
+                                        </td>
+                                        <!-- expand icon td -->
+                                        <td>
+                                            <!-- truncated new markup -->
+                                            winkielooane@gmail.com
+                                        </td>
+                                        <!-- expand icon td -->
+                                        <td>
+                                            <!-- truncated new markup -->
+                                            +234 813 007 1234
+                                        </td>
+                                        <!-- expand icon td -->
+                                        <td>
+                                            <!-- truncated new markup -->
+                                            Head of admin
+                                        </td>
+                                        <!-- expand icon td -->
+
+                                    </tr>
+                                    <!-- Expandable child row -->
+                                    <tr>
+                                        <!-- expand icon td -->
+                                        <td class="bx--table-column-checkbox">
+                                            <input data-event="select" id="bx--checkbox-15" class="bx--checkbox" type="checkbox" value="green" name="checkbox-15">
+                                            <label for="bx--checkbox-15" class="bx--checkbox-label" aria-label="Label name"></label>
+                                        </td>
+                                        <!-- inline action td's -->
+                                        <!-- expand icon td -->
+                                        <td>
+                                            <!-- truncated new markup -->
+                                            Ane I Okarfor Winkie
+                                        </td>
+                                        <!-- expand icon td -->
+                                        <td>
+                                            <!-- truncated new markup -->
+                                            winkielooane@gmail.com
+                                        </td>
+                                        <!-- expand icon td -->
+                                        <td>
+                                            <!-- truncated new markup -->
+                                            +234 813 007 1234
+                                        </td>
+                                        <!-- expand icon td -->
+                                        <td>
+                                            <!-- truncated new markup -->
+                                            Head of admin
+                                        </td>
+                                        <!-- expand icon td -->
+
+                                    </tr>
+                                    <!-- Expandable child row -->
+
+                                    <!-- Expandable child row -->
+                                    <tr>
+                                        <!-- expand icon td -->
+                                        <td class="bx--table-column-checkbox">
+                                            <input data-event="select" id="bx--checkbox-11" class="bx--checkbox" type="checkbox" value="green" name="checkbox-11">
+                                            <label for="bx--checkbox-11" class="bx--checkbox-label" aria-label="Label name"></label>
+                                        </td>
+                                        <!-- inline action td's -->
+                                        <!-- expand icon td -->
+                                        <td>
+                                            <!-- truncated new markup -->
+                                            Load Balancer 5
+                                        </td>
+                                        <!-- expand icon td -->
+                                        <td>
+                                            <!-- truncated new markup -->
+                                            HTTP
+                                        </td>
+                                        <!-- expand icon td -->
+                                        <td>
+                                            <!-- truncated new markup -->
+                                            80
+                                        </td>
+                                        <!-- expand icon td -->
+                                        <td>
+                                            <!-- truncated new markup -->
+                                            Round Robin
+                                        </td>
+                                        <!-- expand icon td -->
+
+                                    </tr>
+                                    <!-- Expandable child row -->
+                                    <tr>
+                                        <!-- expand icon td -->
+                                        <td class="bx--table-column-checkbox">
+                                            <input data-event="select" id="bx--checkbox-12" class="bx--checkbox" type="checkbox" value="green" name="checkbox-12">
+                                            <label for="bx--checkbox-12" class="bx--checkbox-label" aria-label="Label name"></label>
+                                        </td>
+                                        <!-- inline action td's -->
+                                        <!-- expand icon td -->
+                                        <td>
+                                            <!-- truncated new markup -->
+                                            Load Balancer 5
+                                        </td>
+                                        <!-- expand icon td -->
+                                        <td>
+                                            <!-- truncated new markup -->
+                                            HTTP
+                                        </td>
+                                        <!-- expand icon td -->
+                                        <td>
+                                            <!-- truncated new markup -->
+                                            80
+                                        </td>
+                                        <!-- expand icon td -->
+                                        <td>
+                                            <!-- truncated new markup -->
+                                            Round Robin
+                                        </td>
+                                        <!-- expand icon td -->
+
+                                    </tr>
+                                    <!-- Expandable child row -->
+                                </tbody>
+                            </table>
+
+                            <!-- Pagination -->
+                            <div class="bx--pagination" data-pagination>
+                                <div class="bx--pagination__left">
+                                    <label id="select-id-pagination-count-label" class="bx--pagination__text" for="select-id-pagination-count">
+                                        Items per page:
+                                    </label>
+                                    <div class="bx--select bx--select--inline bx--select__item-count">
+                                        <select class="bx--select-input" id="select-id-pagination-count" aria-label="select number of items per page" tabindex="0" data-items-per-page>
+                                            <option class="bx--select-option" value="10" selected>10</option>
+                                            <option class="bx--select-option" value="20">20</option>
+                                            <option class="bx--select-option" value="30">30</option>
+                                            <option class="bx--select-option" value="40">40</option>
+                                            <option class="bx--select-option" value="50">50</option>
+                                        </select>
+                                        <svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" class="bx--select__arrow" width="10" height="6" viewBox="0 0 10 6" aria-hidden="true"><path d="M5 6L0 1 0.7 0.3 5 4.6 9.3 0.3 10 1z"></path></svg>
+                                    </div>
+                                    <span class="bx--pagination__text">
+                                    <span data-displayed-item-range>1-10</span> of
+                                    <span data-total-items>50</span> items
+                                    </span>
+                                </div>
+                                <div class="bx--pagination__right">
+                                    <div class="bx--select bx--select--inline bx--select__page-number">
+                                        <select class="bx--select-input" id="select-id-pagination-page" aria-label="select page number to view" tabindex="0" data-page-number-input>
+                                            <option class="bx--select-option" value="1" selected>1</option>
+                                            <option class="bx--select-option" value="2">2</option>
+                                            <option class="bx--select-option" value="3">3</option>
+                                            <option class="bx--select-option" value="4">4</option>
+                                            <option class="bx--select-option" value="5">5</option>
+                                        </select>
+                                        <svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" class="bx--select__arrow" width="10" height="6" viewBox="0 0 10 6" aria-hidden="true"><path d="M5 6L0 1 0.7 0.3 5 4.6 9.3 0.3 10 1z"></path></svg>
+                                    </div>
+                                    <label id="select-id-pagination-page-label" class="bx--pagination__text" for="select-id-pagination-page">of 5 pages</label>
+                                    <button class="bx--pagination__button bx--pagination__button--backward" tabindex="0" data-page-backward aria-label="Backward button">
+                                        <svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" class="bx--pagination__nav-arrow" width="20" height="20" viewBox="0 0 32 32" aria-hidden="true"><path d="M19 23L11 16 19 9 19 23z"></path></svg>
+                                    </button>
+                                    <button class="bx--pagination__button bx--pagination__button--forward" tabindex="0" data-page-forward aria-label="Forward button">
+                                        <svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" class="bx--pagination__nav-arrow" width="20" height="20" viewBox="0 0 32 32" aria-hidden="true"><path d="M13 9L21 16 13 23 13 9z"></path></svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- users mobile version -->
+                    <div class="sch-col-sm-11  sch-col-md-11 sch-mobile-users">
+                        <!-- testting  -->
+                        <div class=" sch-col-sm-12 sch-col-md-12 ">
+                            <div class="sch-m-y ">
+                                <h2>Users</h2>
+                                <div class="sch-table-list">
+                                    <table class="bx--data-table     bx--data-table--sort ">
+
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <p class="sch-row">
+                                                        <span class="sch-txt-bold sch-col-sm-11">Gracious International school</span>
+                                                        <i data-feather="more-vertical" class="sch-col-sm-1"></i>
+                                                    </p>
+
+
+                                                    <p class="">
+                                                        <legend class="bx--label ">graciousIntschool@gmail.com</legend>
+
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="sch-row">
+                                                        <span class="sch-txt-bold sch-col-sm-11">Gracious International school</span>
+                                                        <i data-feather="more-vertical" class="sch-col-sm-1"></i>
+                                                    </p>
+
+
+                                                    <p class="">
+                                                        <legend class="bx--label ">graciousIntschool@gmail.com</legend>
+
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="sch-row">
+                                                        <span class="sch-txt-bold sch-col-sm-11">Gracious International school</span>
+                                                        <i data-feather="more-vertical" class="sch-col-sm-1"></i>
+                                                    </p>
+
+
+                                                    <p class="">
+                                                        <legend class="bx--label ">graciousIntschool@gmail.com</legend>
+
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="sch-row">
+                                                        <span class="sch-txt-bold sch-col-sm-11">Gracious International school</span>
+                                                        <i data-feather="more-vertical" class="sch-col-sm-1"></i>
+                                                    </p>
+
+
+                                                    <p class="">
+                                                        <legend class="bx--label ">graciousIntschool@gmail.com</legend>
+
+                                                    </p>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <!-- modal  -->
+        <div data-modal id="modal-ptxyfo5520i" class="bx--modal bx--modal--danger" role="dialog" aria-modal="true" aria-labelledby="modal-ptxyfo5520i-label" aria-describedby="modal-ptxyfo5520i-heading" tabindex="-1">
+            <div class="bx--modal-container sch-col-lg-4">
+                <div class="bx--modal-header">
+                    <p class="bx--modal-header__label bx--type-beta" id="modal-ptxyfo5520i-label">Confirm delete</p>
+                    <!-- <p class="bx--modal-header__heading bx--type-beta" id="modal-ptxyfo5520i-heading">Confrim delete</p> -->
+                    <button class="bx--modal-close" type="button" data-modal-close aria-label="close modal">
+                  <svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" class="bx--modal-close__icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M12 4.7l-.7-.7L8 7.3 4.7 4l-.7.7L7.3 8 4 11.3l.7.7L8 8.7l3.3 3.3.7-.7L8.7 8z"></path></svg>
+              </button>
+                </div>
+
+                <div class="bx--modal-content">
+                    <p>Deleting PETELLA will parmenantely delete the configuration, related files [e.t.c]. This action cannot be undone. Are you sure?</p>
+                </div>
+
+                <div class="bx--modal-footer">
+                    <button class="bx--btn  sch-cancel-btn" type="button" data-modal-close>Cancel</button>
+                    <button class="bx--btn  sch-delete--btn" type="button" aria-label="Danger" data-modal-primary-focus>Delete</button> </div>
+            </div>
+        </div>
+        <!-- sucess modal -->
+        <!-- <div data-notification class="bx--toast-notification bx--toast-notification--success bx--toast-notification--low-contrast" role="alert">
+            <svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" class="bx--toast-notification__icon" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M10,1c-4.9,0-9,4.1-9,9s4.1,9,9,9s9-4,9-9S15,1,10,1z M8.7,13.5l-3.2-3.2l1-1l2.2,2.2l4.8-4.8l1,1L8.7,13.5z"></path><path fill="none" d="M8.7,13.5l-3.2-3.2l1-1l2.2,2.2l4.8-4.8l1,1L8.7,13.5z" data-icon-path="inner-path" opacity="0"></path></svg>
+            <div class="bx--toast-notification__details">
+                <h3 class="bx--toast-notification__title">Notification title</h3>
+                <p class="bx--toast-notification__subtitle">Our goal is to become better at our craft and raise our collective knowledge by sharing experiences, best practices, what we have recently learned or what we are working on.</p>
+                <p class="bx--toast-notification__caption">Time stamp [00:00:00]</p>
+            </div>
+            <button data-notification-btn class="bx--toast-notification__close-button" type="button" aria-label="close">
+          <svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" class="bx--toast-notification__close-icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M12 4.7L11.3 4 8 7.3 4.7 4 4 4.7 7.3 8 4 11.3 4.7 12 8 8.7 11.3 12 12 11.3 8.7 8z"></path></svg>
+        </button>
+        </div> -->
+    </section>
+
+    <script src="https://unpkg.com/carbon-components@latest/scripts/carbon-components.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script>
+        feather.replace()
+            // Add active class to the current button (highlight it)
+        var SideNav = document.getElementById("side-nav");
+        var ActiveLink = SideNav.getElementsByClassName("side-nav-a");
+        for (var i = 0; i < ActiveLink.length; i++) {
+            ActiveLink[i].addEventListener("click", function() {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    </script>
+
+    <script>
+        // side nav drop down $('.sub-menu ul').hide(); $(".sub-menu a").click(function() { $(this).parent(".sub-menu").children("ul").slideToggle("100"); $(this).find(".right").toggleClass("fa"); });
+    </script>
+
+    <script>
+        // mobile navigation
+        function mobileNavbar() {
+            var x = document.getElementById("mobileNav");
+            if (x.className === "sch-mobile-nav") {
+                x.className += " responsive";
+            } else {
+                x.className = "sch-mobile-nav";
+            }
+        }
+    </script>
+</body>
+
+</html>
